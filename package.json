@@ -1,0 +1,48 @@
+{
+  "name": "@ih/sandbox",
+  "version": "0.0.1",
+  "description": "A safe sandbox environment to run eval or compile and execute javascript in",
+  "main": "src/Sandbox.js",
+  "scripts": {
+    "test": "test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddzombie/sandbox.git"
+  },
+  "author": "Ian Holser",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/oddzombie/sandbox/issues"
+  },
+  "homepage": "https://github.com/oddzombie/sandbox#readme",
+  "devDependencies": {
+    "eslint": "5.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-rss": "^0.0.7",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.11.1"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "jsxBracketSameLine": true,
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "extends": [
+      "rss"
+    ],
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "rules": {
+      "linebreak-style": "off"
+    }
+  }
+}
